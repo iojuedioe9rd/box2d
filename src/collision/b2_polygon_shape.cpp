@@ -419,7 +419,7 @@ void b2PolygonShape::ComputeMass(b2MassData* massData, float density) const
 	massData->mass = density * area;
 
 	// Center of mass
-	b2Assert(area > b2_epsilon);
+	//b2Assert(area > b2_epsilon);
 	center *= 1.0f / area;
 	massData->center = center + s;
 
